@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<meta charset="utf-8">
+		<title>博尧科技</title>
+		<link rel="shortcut icon" href="image/ico.png">
+
+		<!--默认样式-->
+
+		<link rel="stylesheet" href="css/reset.css">
+
+		<!--响应式框架-->
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap4.css">
+		<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+
+		<!--css3动画库-->
+
+		<link rel="stylesheet" href="css/animate.css">
+
+		<!--banner大图基础样式-->
+
+		<link rel="stylesheet" href="css/slick.css">
+
+		<!--页面滚动基础样式-->
+
+		<link rel="stylesheet" href="css/jquery.fullPage.css" />
+
+		<!--导航样式-->
+
+		<link rel="stylesheet" href="css/head.css" />
+
+		<!--图片和滚屏样式-->
+
+		<link rel="stylesheet" href="css/index.css">
+		<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+		<style type="text/css">
+			body{
+				padding: 0;
+			}
+			.videoplayer {
+
+				position: fixed;
+				right: 0;
+				top: 200%;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				z-index: -100;
+				-webkit-filter: grayscale(20%);
+			}
+
+			source {
+				min-width: 100%;
+				min-height: 100%;
+				height: auto;
+				width: auto;
+			}
+
+			.card{
+				 background-color: transparent;
+			 }
+			.title {
+				margin-top: 7rem;
+			}
+
+			.navbarUl {
+				width: 100%;
+			}
+
+			/* .navbarUl li{
+				 width: 100%;
+				 height: 2.5rem;
+				
+			 } */
+			 /* .navbarUl ul li{
+				 width: 100%;
+			 } */
+			 .barUl{
+				 /* background:url(image/banner4.jpg); */
+				  /* filter:blur(10px); */
+			 }
+			 .barUl li{
+				 height: 2.5rem;
+				  
+			 }
+			 .barUl li a{
+				 margin-top: 1rem;
+			 }
+			 .bg{
+				 height: 12.5rem;
+				 width: 100%;
+				 z-index: -999;
+				 background-color: #818182;
+				 filter: blur(1.25rem);
+			 }
+			 .logoLift a img{
+				 height: 40px;
+				 margin-top: 6px;
+			 }
+			 .serviceItems li button{
+				 width: 100%;
+				 font-size: 0.25rem;
+				 margin-bottom: 0.25rem;
+				 /* height: 1rem; */
+			 }
+			 .card-header{
+				 padding: 	0;
+			 }
+		</style>
+	</head>
+	<body>
+		<!-- 导航 -->
+
+			<header class="header" style="padding: 0;">
+				
+				<div class="d-flex " style="float: right;  width: 100%;z-index: 10;background-color: #1d243599;">
+					<div class="fl right " style="color: white; width: 100%;">
+						<div class="pos-f-t "style="width: 100%; float: right;">
+							
+							<div class="collapse text-center bg-dark" id="navbarToggleExternalContent" >
+								
+								
+									<ul class="barUl" data-in="fadeInDown" data-out="fadeOutUp" style="color: white;">
+										<li  style=";" style="text-align: center; display: flex;justify-content:center;"> 
+											<a href="index.html" class="active" style="color: white;display: inline-block; width: 100%;text-align: center;">首页</a>
+										</li>
+										<li>  
+											<a href="vr.html" style="color: white;display: inline-block; width: 100%;text-align: center;">VR/AR</a>
+										</li>
+										<li>
+											<a href="wxapp.html" style="color: white;display: inline-block; width: 100%;text-align: center;">小程序/公众号</a>
+										</li>
+										<li>
+											<a href="app.html" style="color: white;display: inline-block; width: 100%;text-align: center;">APP开发</a>
+										</li>
+										<li>
+											<a href="case.html" style="color: white;display: inline-block; width: 100%;text-align: center;">案例展示</a>
+										</li>
+										<li>
+											<a href="news.html" style="color: white;display: inline-block; width: 100%;text-align: center;">新闻动态</a>
+										</li>
+										<li>
+											<a href="contact_us.html" style="color: white;display: inline-block; width: 100%;text-align: center;">关于我们</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							
+							
+						</div>
+						<div class="" style=" display: flex;justify-content: space-between; width: 100%; background-color: #1d243599;">
+							
+								
+								
+										<div class="logoLift" style="height: 40px; margin-left: 6px;" >
+											<!-- <a href=""><img src="image/logo3.png" alt="" class="img1" /></a> -->
+											<a href=""><img src="image/logo3.png" alt="" class="img2" /></a>
+										</div>
+									
+								
+									<nav class="navbar navbar-dark "  >
+										
+										<button  class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent"
+										 aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+											<span class="navbar-toggler-icon bg-dark"></span>
+										</button>
+									</nav>
+							
+							
+						</div>
+					</div>
+				
+				</div>
+			</header>
+
+		<div id="index_main" class="index_main">
+			<!-- 第一页 -->
+			<div class="section section1">
+
+				<div class="index_banner">
+
+					<div class="item">
+
+						<div class="items scaleBg" style="background-image: url(image/banner1.jpg);"></div>
+
+						<div class="inner">
+
+							<div class="block_txt">
+
+								<!-- <h4> vr</h4> -->
+
+								<h2>5G物联世界，VR畅享精彩</h2>
+
+								<h3 style="color: white; text-align: center;">VR具有超强的仿真系统，实现了人机交互，使人在操作过程中，可以随意操作并且得到环境最真实的反馈</h3>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					
+					
+					
+					<div class="item">
+
+						<div class="items scaleBg" style="background-image: url(image/banner2.jpg);"></div>
+
+						<div class="inner">
+
+							<div class="block_txt">
+
+								<!-- <h4> 小程序</h4> -->
+
+								<h2>携手小程序，共创新视野</h2>
+
+								<h3 style="color: white; text-align: center;">让营销变简单，吸引消费者下单，形成了一种主流的线上线下微信互动营销方式。</h3>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="item">
+
+						<div class="items scaleBg" style="background-image: url(image/banner3.jpg);"></div>
+
+						<div class="inner">
+
+							<div class="block_txt">
+
+								<!-- <h4> app开发</h4> -->
+
+								<h2>创新开发APP，点亮别样生活</h2>
+
+								<h3 style="color: white; text-align: center;">高效研发模式，移动网站和智能硬件完美支持，打造线上线下一体化移动解决方案</h3>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="item">
+
+						<div class="items scaleBg" style="background-image: url(image/banner4.jpg);"></div>
+
+						<div class="inner">
+
+							<div class="block_txt">
+
+								<!-- <h4> </h4> -->
+
+								<h2>博物之所成，定制独家精彩</h2>
+
+								<h3 style="color: white; text-align: center;">定制开发，及时与客户沟通，了解调整需求，提供高效保质的服务广告保障。</h3>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="left slick_txt">
+
+					<div class="prev slick_arrow"></div>
+
+				</div>
+
+				<div class="right slick_txt">
+
+					<div class="next slick_arrow"></div>
+
+				</div>
+
+				<div class="number">
+
+					<div class="inner clearfix">
+
+						<span class="active">01</span>
+
+						<span>02</span>
+
+						<span>03</span>
+
+						<span>04</span>
+
+					</div>
+
+				</div>
+
+			</div>
+			<!-- 第一页 -->
+			<!-- 第二页 -->
+			<div class="section section2">
+				<div class="container" style="height: 100%;margin-top: 60%;" >
+				
+						<div class="title">
+							<div class="title-left" style="color: white;font-size: 2rem;">
+								<span>服务项目</span>
+							</div>
+							<div class="title-right" style="color: white;">
+								<p style="font-size: 0.5rem;">
+									具备完善智能的系统无需任何代码编程基础多款网站成品可选<br>
+						
+									做到同数据同网址，但不同体验的终端行为
+						
+								</p>
+							</div>
+						</div>
+						<div class="" style="color:  #c3bebe;">
+							<div style="float: left;width: 20%;">
+								<p >
+									<ul class="serviceItems">
+										<li><button class="btn btn-primary"  onclick="clickButton0()" type="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="true" aria-controls="multiCollapseExample1">VR/AR</button></li>
+										<li><button class="btn btn-primary" onclick="clickButton1()" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">小程序/公众号</button></li>
+										<li><button class="btn btn-primary" onclick="clickButton2()" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">APP开发</button></li>
+									</ul>
+								</p>
+							</div>
+							<div class=""style="float: right;width: 70%;">
+								
+														
+								<div class="collapse multi-collapse show SI" id="multiCollapseExample1">
+								     <div class="card card-body">
+										专注于VR（Virtual Reality，虚拟现实）、AR（Augmented	Reality，增强现实）、MR混合现实软硬件技术的研究，内容及应用开发，覆盖VR产业上下游。					 
+									</div>
+								</div>						 
+								<div class="collapse multi-collapse SI" id="multiCollapseExample2">
+								     <div class="card card-body">
+										一体化营销加速流量裂变，公众号、小程序、微信群互联互通，流量变现快速高效，更佳体验提升付费转化，极大程度降低转化损耗							 
+									</div>
+								</div>
+								<div class="collapse multi-collapse SI" id="multiCollapseExample3">
+								  <div class="card card-body">
+										提供原生APP开发、web APP开发及混合APP开发服务。专业的技术团队，丰富的行业项目经验。Android开发、ios开发、h5开发，一站式俱全。提供成熟的App行业应用解决方案，根据不同行业特性，为产品在移动场景中快速落地。							  </div>
+								</div>
+							</div>
+					
+					
+						
+						
+						
+						
+						  
+						    
+					
+					
+						
+					<!-- 	<div class="col-4">
+
+							<div class="service-item">
+
+
+								<div class="service-item-num">1.</div>
+
+								<div class="service-item-title">VR/AR</div>
+
+								<p class="service-item-text" style="font-size: 0.5rem;">专注于VR（Virtual Reality，虚拟现实）、AR（Augmented
+									Reality，增强现实）、MR混合现实软硬件技术的研究，内容及应用开发，覆盖VR产业上下游。</p>
+
+								<div class="service-item-btn-box">
+
+									<button type="button" class="btn btn-primary"><a class="service-item-btn" style="color: white; font-size: 0.5rem;"
+										 href="vr.html" target="_blank">了解更多></a></button>
+
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col-4">
+
+							<div class="service-item">
+
+							
+
+								<div class="service-item-num">2.</div>
+
+								<div class="service-item-title">小程序/公众号</div>
+
+								<p class="service-item-text" style="font-size: 0.5rem;">一体化营销加速流量裂变，公众号、小程序、微信群互联互通，流量变现快速高效，更佳体验提升付费转化，极大程度降低转化损耗。</p>
+
+								<div class="service-item-btn-box">
+									<button type="button" class="btn btn-primary "><a class="service-item-btn text-white" style="color: white; font-size: 0.5rem;"
+										 href="wxapp.html" target="_blank">了解更多></a></button>
+
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="col-4">
+
+							<div class="service-item">
+
+								
+
+								<div class="service-item-num">3.</div>
+
+								<div class="service-item-title">APP开发</div>
+
+								<p class="service-item-text" style="font-size: 0.5rem;">提供原生APP开发、web
+									APP开发及混合APP开发服务。专业的技术团队，丰富的行业项目经验。Android开发、ios开发、h5开发，一站式俱全。提供成熟的App行业应用解决方案，根据不同行业特性，为产品在移动场景中快速落地。
+
+								</p>
+
+								<div class="service-item-btn-box">
+									<button type="button" class="btn btn-primary"><a class="service-item-btn" style="color: white; font-size: 0.5rem;"
+										 href="app.html" target="_blank">了解更多></a></button>
+
+
+								</div>
+
+							</div> -->
+						</div>
+
+								
+					</div>
+				</div>
+				<!-- 第二页 -->
+		<!-- 	</div> -->
+			<!-- 第二页 -->
+			<!-- 第三页 -->
+			<div class="section section3" style="width: 100%;" />
+			<video id="vi" class="videoplayer" autoplay="autoplay" muted="muted" preload loop style="z-index: -100;">
+				<source type="video/mp4" src="https://www.7mrvrar.com/wp-content/uploads/2018/08/1.mp4?_=1">
+			</video>
+			<div class="container" style="color: white;">
+				<div class="service-main">
+
+					<div class="service-main-title-sm" style="font-size: 2rem;">特色服务</div>
+
+					<div class="service-main-title">VR/AR</div>
+
+					<div class="service-main-text" style="-webkit-line-clamp:3; overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">
+						<p style="-webkit-line-clamp:6; overflow: hidden;text-overflow: ellipsis;white-space: nowrap; font-size: 0.5rem;">
+							在AR/VR方面，秉承专注、专业、创新的设计制作思维，通过技术设计让产品发挥最大价值，并发掘无限的可能。
+							力求通过自身的策划和设计生动地呈现用户的想法、策略乃至抽象的概念，帮助用户创造和提升品牌效应，实现价值的最大化。
+
+							让VR成为一种生活方式，让用户享受VR科技的力量</p>
+
+
+					</div>
+
+
+
+				</div>
+				<button type="button" class="btn btn-primary"><a class="service-item" href="vr.html" target="_blank" style="color: white; font-size: 0.5rem;">了解更多></a></button>
+			</div>
+
+
+		</div>
+		<!-- 第三页 -->
+		<!-- 第四页 -->
+		<div class="section section4" style="width: 100%;">
+			<div class="container  " style="color: white;">
+
+				<div class="title">
+
+					<div class="title-left">
+
+						<span style="color: white; font-size: 2rem; font-weight: bold;">服务流程</span>
+
+					</div>
+
+					<div class="title-right">
+
+						<p style="color:#c3bebe ; font-size: 0.5rem;">
+
+							在不断的创新和实践中总结出可持续和可信赖的设计流程，坚持与用户一起思考，<br>用设计的方法发现问题、解决问题、输出设计方案，并实现客户产品和企业价值的提升.
+
+						</p>
+
+					</div>
+					<div class="accordion" id="accordionExample" style="background-color: transparent;">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<h2 class="mb-0">
+									<button style="font-size: 0.5rem;" class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseOne"
+									 aria-expanded="true" aria-controls="collapseOne">
+										沟通咨询
+									</button>
+								</h2>
+							</div>
+
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+								<div class="card-body" style="font-size: 0.05rem;">
+									进行初步了解，确定需要的基础服务类别和个性化特色功能
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<h2 class="mb-0">
+									<button style="font-size: 0.5rem;" class="btn btn-primary collapsed" type="button" data-toggle="collapse"
+									 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										方案制定
+									</button>
+								</h2>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+								<div class="card-body" style="font-size: 0.05rem;">
+									专业人员会为您制定出适合的产品和最佳解决方案供客户选择
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingThree">
+								<h2 class="mb-0">
+									<button style="font-size: 0.5rem;" class="btn btn-primary collapsed" type="button" data-toggle="collapse"
+									 data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										项目测试
+									</button>
+								</h2>
+							</div>
+							<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+								<div class="card-body" style="font-size: 0.05rem;">
+									设备生产安装完毕后，对项目进行调试，开始测试、试运营
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingFour">
+								<h2 class="mb-0">
+									<button style="font-size: 0.5rem;" class="btn btn-primary collapsed" type="button" data-toggle="collapse"
+									 data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										管理维护
+									</button>
+								</h2>
+							</div>
+							<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+								<div class="card-body" style="font-size: 0.05rem;">
+									系统开发完成后,会有专人对此进行相关的维护管理
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingFive">
+								<h2 class="mb-0">
+									<button style="font-size: 0.5rem;" class="btn btn-primary collapsed" type="button" data-toggle="collapse"
+									 data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+										需求梳理
+									</button>
+								</h2>
+							</div>
+							<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+								<div class="card-body" style="font-size: 0.05rem;">
+									了解产品的需求，通过讲解、图示等方式确定客户定制要求
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingSix">
+								<h2 class="mb-0">
+									<button style="font-size: 0.5rem;" class="btn btn-primary collapsed" type="button" data-toggle="collapse"
+									 data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+										方案实施
+									</button>
+								</h2>
+							</div>
+							<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+								<div class="card-body" style="font-size: 0.05rem;">
+									在双方达成一致后，进行合同的制定与签署，开始实施方案
+								</div>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-header" id="headingSeven">
+								<h2 class="mb-0">
+									<button style="font-size: 0.5rem;" class="btn btn-primary collapsed" type="button" data-toggle="collapse"
+									 data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+										项目落地
+									</button>
+								</h2>
+							</div>
+							<div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+								<div class="card-body" style="font-size: 0.05rem;">
+									测试完毕后准时交付使用，免费上门对客户方进行使用教学培训
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 第四页 -->
+		<!-- 第五页 -->
+		<div class="section section5">
+			<div class="container">
+				<div class="title">
+					<div class="title-left" style="color: white;font-size: 2rem;">
+						<span style="font-size: 2rem;">服务优势</span>
+					</div>
+					<div class="title-right" style="color: white;">
+						<p style="font-size: 0.5rem;">
+							在不断的创新和实践中总结出可持续和可信赖的设计流程，坚持与用户一起思考，<br>用设计的方法发现问题、解决问题、输出设计方案，并实现客户产品和企业价值的提升.
+						</p>
+					</div>
+					<div class="product-number-info" id="productNumber" style="color: white;">
+
+						<div class="product-number-inner">
+
+							<ul class="q">
+
+								<li class="li-1"><b><i id="productNumber_1" data-sum="56">0</i>&nbsp;<sup style="color: red;">+</sup></b>
+
+									<p style="font-size: 0.5rem;">项目案例</p>
+
+								</li>
+
+								<li class="li-1"><b><i id="productNumber_2" data-sum="720">0</i>&nbsp;<sub >天</sub></b>
+
+									<p style="font-size: 0.5rem;">安全运行</p>
+
+								</li>
+
+
+
+								<!-- <li class="li-2"><b><i id="productNumber_2" data-sum="687">0</i><em>天</em></b>
+						
+									<p>安全运行</p>
+						
+								</li> -->
+
+								<li class="li-3"><b><i id="productNumber_3" data-sum="814">0</i>&nbsp;<sup style="color: red;">+</sup></b>
+
+									<p style="font-size: 0.5rem;">顾客</p>
+
+								</li>
+
+								<li class="li-4"><b><i id="productNumber_4" data-sum="37">0</i>&nbsp;<sub >个</sub></b>
+
+									<p style="font-size: 0.5rem;">企业荣誉</p>
+
+								</li>
+
+								<li class="li-5"><b><i id="productNumber_5" data-sum="21">0</i>&nbsp;<sub >个</sub></b>
+
+									<p style="font-size: 0.5rem;">研发专利</p>
+
+								</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!-- 第五页 -->
+		<!-- 第六页 -->
+		<div class="section section6">
+			<div class="container" style="color: white;">
+
+				<div class="contact-main">
+
+					<div class="text-primary"><span class="text-primary" style="color: #00A0E9; font-size: 2.5rem;">潍坊,</span><span
+						 style=" font-size: 1.75rem;">山东</span></div>
+
+					<div class="map-address">山东省潍坊市奎文区新华路1589号世纪环球中</div>
+
+					<div class="emil" style=" font-size: 1.5rem;">1466181491@qq.com</div>
+
+					<div class="phone" style=" font-size: 1.5rem;">18369656557</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		<!-- 第六页 -->
+
+	</body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/jquery.fullPage.min.js"></script>
+	<script src="js/index_slick.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/count.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		/*
+	
+	参数
+	
+	target = 目标元素的 ID；
+	
+	startVal = 开始值；
+	
+	endVal = 结束值；
+	
+	decimals = 小数位数，默认值是0；
+	
+	duration = 动画延迟秒数，默认值是2；
+	
+	*/
+		function clickButton0(){
+			
+			var list = $('.SI')
+			list[1].className = 'collapse multi-collapse SI'
+			list[2].className = 'collapse multi-collapse SI'
+			// for(var i = 0;i < list.length;i++){
+			// 	console.log(list[i].className);
+			// 	list[i].className = 'collapse multi-collapse SI'
+			// 	console.log('123'+list[i].className);
+				
+			// 	// item.attr('class','')
+			// }
+		}
+		function clickButton1(){
+			var list = $('.SI')
+			console.log();
+			// if(list[1].className = 'collapse multi-collapse'){
+			// }else{
+				list[0].className = 'collapse multi-collapse SI'
+				list[2].className = 'collapse multi-collapse SI'
+			}
+			
+			
+			// for(var i = 0;i < list.length;i++){
+			// 	console.log(list[i].className);
+			// 	list[i].className = 'collapse multi-collapse SI'
+			// 	console.log('123'+list[i].className);
+				
+			// 	// item.attr('class','')
+			// }
+		// }
+		function clickButton2(){
+			console.log();
+			var list = $('.SI')
+			list[0].className = 'collapse multi-collapse SI'
+			list[1].className = 'collapse multi-collapse SI'
+			// for(var i = 0;i < list.length;i++){
+			// 	console.log(list[i].className);
+			// 	list[i].className = 'collapse multi-collapse SI'
+			// 	console.log('123'+list[i].className);
+				
+			// 	// item.attr('class','')
+			// }
+		}
+		// $('.serviceItems li button').click(function(){
+		// 	$('.serviceItems li button').each(function(item){
+		// 		if
+		// 		item.Attr()
+		// 		console.log(item);
+		// 	})
+		// 	// console.log($('.serviceItems li button'))
+			 
+		// })
+		
+    // 当点击菜单按钮时使section 模糊
+		$('.navbar').click(function(){
+			
+			if(!$('.pos-f-t').height()){
+				$('.section').css('filter','blur(10px)')
+			}else{
+				$('.section').css('filter','blur(0px)')
+			}
+		});
+		
+		productNumber = function() {
+
+			var arr = [];
+
+			$('#productNumber li').each(function(i, dom) {
+
+				var iDom = $(dom).find('i'),
+
+					decimals = 0,
+
+					sum = iDom.data('sum');
+
+				//初始化传参，参数为上面注释中的参数    
+
+				arr.push(new CountUp(iDom.attr('id'), 0, sum, decimals, 4, {
+
+					useEasing: true, //效果
+
+					separator: '' //数字分隔符
+
+				}));
+
+				arr[i].start();
+
+			});
+
+		}();
+	</script>
+
+</html>
